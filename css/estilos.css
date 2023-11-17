@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css?family=Andada');
+
+body{
+	font-family: 'Andada', "helvetica neue", sans-serif;
+	position: relative;
+}
+header{
+	background-image: url('../images/fondo.jpg');
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	padding: 20vh 0;
+}
+.navbar{
+	background-color: rgba(33, 37, 41, 0.5);
+}
+
+:target:before {
+content:"";
+display:block;
+height:100px; 
+margin:-100px 0 0; 
+}
+#headline{
+	font-size: 5rem;
+}
+.highlights{
+	color: rgb(27, 216, 53);
+}
+
+hr.style-custom { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style-custom:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+.collapse:not(.show) {
+    display: none;
+    justify-content: end;
+}
+
+.nav-item{
+	margin: 0px 5px;
+}
+.navbar-brand img {
+  	width: 50px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(27, 216, 53) ;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+	padding: 5px 20px;
+	color: rgb(255, 107, 66);
+	border:1px solid rgb(255, 107, 66);
+	
+}
+.navbar-dark .navbar-nav .nav-link.active:hover{
+	color: rgb(255, 255, 255);
+	border:1px solid rgb(255, 255, 255);
+}
+.about{
+    font-size: 10px;
+}
+
+.skills-set h1{
+	text-align: center;
+	color: var(--bg-dark);
+	margin-bottom: 20px;
+}
+.skills-container {
+  	width: 100%;
+  	background-color: var(--light);
+	margin: 10px 0px;
+	padding: 20px;
+
+}
+.skill span{
+	float: left;
+}
+
+.skill {
+  	text-align: right;
+  	padding: 5px 10px;
+  	color: white;
+	min-width: 150px;
+	background-color: var(--light);
+	
+}
+
+.html {
+	width: 80%; 
+	background-color: var(--success);
+	-webkit-animation: html 4s ease-out; 
+    animation: html 4s ease-out;
+}
+.css {
+	width: 20%; 
+	background-color: var(--primary);
+	-webkit-animation: css 4s ease-out; 
+    animation: css 4s ease-out;
+}
+.js {
+	width: 60%; 
+	background-color: var(--danger);
+	-webkit-animation: js 4s ease-out; 
+    animation: js 4s ease-out;
+}
+.php {
+	width: 70%; 
+	background-color: var(--secondary);
+	-webkit-animation: php 4s ease-out; 
+    animation: php 4s ease-out;
+}
+@keyframes html {
+    0%   {width:15%; }
+    100% {width:80%;}
+}
+@keyframes css {
+    0%   {width:10%; }
+    100% {width:20%;}
+}
+@keyframes js {
+    0%   {width:10%; }
+    100% {width:60%;}
+}
+@keyframes php {
+    0%   {width:10%; }
+    100% {width:70%;}
+}
+
+
+#estudios{
+	text-align: left;
+	
+}
+.g-4, .gy-4 {
+    --bs-gutter-y: 1.5rem;
+    justify-content: center;
+}
+.estudios-container{
+	background-color: var(--light);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.work{
+	padding: 0;
+	margin: 0;
+	margin-bottom: -14px;
+	border: none;
+}
+.grid2-fix{
+	margin-bottom: -7px;
+}
+.view-more{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: var(--secondary);
+	height: 240px;
+	padding: 0;
+	padding-top: 110px;
+	width: 100%
+}
+
+.view-more:hover{
+	text-decoration: none;
+	background-color: rgba(33, 37, 41, 0.5);
+	color: var(--light);
+	
+}
+.px-0{
+	padding-left: 0;
+	padding-right: 0;
+}
+.mx-0{
+	margin-left: 0;
+	margin-right:0;
+}
+
+#contact{
+	color: var(--light);
+}
+#submit{
+	margin-right: 12px;
+}
+#contact-email{
+	text-decoration: none;
+	color: var(--light);
+}
+#contact-email:hover{
+	color: var(--dark);
+}
+.contact-info .fa {
+  padding-right: 5px;
+}
+
+#contact .form-control {
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+
+#contact input {
+  height: 55px;
+}
+#estudios .col{
+	
+		width: 500px;
+		height: 750px;
+	
+}
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+	.row-cols-md-2>* {
+		flex: 10% 10% auto;
+		width: 40%;
+	}
+	
+} 
+/*smartphone*/
+@media screen and (min-width:320px) and (max-width:600px) {
+	
+} 
